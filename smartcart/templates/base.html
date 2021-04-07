@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+	<title>Smart Cart</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Fontawesome -->
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome-all.css' %}">
+	<!-- Tailwind -->
+    <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<!-- Animate Css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Owl Css -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+	<!-- Style -->
+    <link rel="stylesheet" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="{% static 'images/favicon.png' %}">
+</head>
+<body>
+	<!-- Header -->
+	<header class="cart-header">
+		<nav class="navbar navbar-expand-lg bg-light">
+		  <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" class="img-fluid" /></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Shop By Categories
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="{% url 'product' %}">
+					<img src="{% static 'images/header/watch.png' %}" class="img-fluid">
+				  	<p>Watches</p>
+				  </a>
+				  <div class="dropdown-divider m-0"></div>
+					<a class="dropdown-item" href="{% url 'product' %}">
+					<img src="{% static 'images/header/shoe.png' %}" class="img-fluid">
+				  	<p>Shoe</p>
+				  </a>
+					<div class="dropdown-divider m-0"></div>
+					<a class="dropdown-item" href="{% url 'product' %}">
+					<img src="{% static 'images/header/glass.png' %}" class="img-fluid">
+				  	<p>Sun Glasses</p>
+				  </a>
+					<div class="dropdown-divider m-0"></div>
+					<a class="dropdown-item" href="{% url 'product' %}">
+					<img src="{% static 'images/header/bag.png' %}" class="img-fluid">
+				  	<p>Bags</p>
+				  </a>
+				</div>
+			  </li>
+				<li class="nav-item cart">
+					<a class="nav-link" href="{% url 'product' %}"><i class="fa fa-shopping-cart"></i> <span class="cart-count"></span></a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+	</header>
+{% block content %}
+{% endblock %}
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="footer-left">
+						<img src="{% static 'images/logo.png' %}" class="img-fluid">
+						<p>Smart cart is an online shopping website where all essentials are available for your regular uses with exclusive offers which can be delivered at your door step all over India.</p>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-12">
+					<div class="footer-middle">
+						<p>About</p>
+						<ul>
+							<li><a href="javascript:;">Home</a></li>
+							<li><a href="javascript:;">About</a></li>
+							<li><a href="javascript:;">Why Us</a></li>
+							<li><a href="javascript:;">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-12">
+					<div class="footer-middle">
+						<p>Help</p>
+						<ul>
+							<li><a href="javascript:;">Payments</a></li>
+							<li><a href="javascript:;">Shipping</a></li>
+							<li><a href="javascript:;">FAQ</a></li>
+							<li><a href="javascript:;">Cancellation</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-2 col-12">
+					<div class="footer-middle">
+						<p>Social</p>
+						<ul>
+							<li><a href="javascript:;">Facebook</a></li>
+							<li><a href="javascript:;">Twitter</a></li>
+							<li><a href="javascript:;">Instagram</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyrights">
+			<p>© Smart Cart 2021. All right reserved.</p>
+		</div>
+	</footer>
+	<!-- Jquery -->
+	<script src="{% static 'js/jquery.js' %}"></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+	<!-- Owl -->
+	<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+	<!-- Custom Js -->
+	<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

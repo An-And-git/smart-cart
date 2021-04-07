@@ -1,0 +1,358 @@
+/*------------------------------------------------------------------
+[Default Stylesheet]
+ 
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+	[Layout]
+
+	01. Font Face
+	02. Common CSS
+	03. Margin and Padding
+	04. Heading
+
+-------------------------------------------------------------------*/
+
+/* Font Face */
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-ExtraLight.eot');
+    src: url('fonts/Karla-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-ExtraLight.woff2') format('woff2'),
+        url('fonts/Karla-ExtraLight.woff') format('woff'),
+        url('fonts/Karla-ExtraLight.ttf') format('truetype'),
+        url('fonts/Karla-ExtraLight.svg#Karla-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-ExtraBoldItalic.eot');
+    src: url('fonts/Karla-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-ExtraBoldItalic.woff2') format('woff2'),
+        url('fonts/Karla-ExtraBoldItalic.woff') format('woff'),
+        url('fonts/Karla-ExtraBoldItalic.ttf') format('truetype'),
+        url('fonts/Karla-ExtraBoldItalic.svg#Karla-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Bold.eot');
+    src: url('fonts/Karla-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-Bold.woff2') format('woff2'),
+        url('fonts/Karla-Bold.woff') format('woff'),
+        url('fonts/Karla-Bold.ttf') format('truetype'),
+        url('fonts/Karla-Bold.svg#Karla-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-ExtraBold.eot');
+    src: url('fonts/Karla-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-ExtraBold.woff2') format('woff2'),
+        url('fonts/Karla-ExtraBold.woff') format('woff'),
+        url('fonts/Karla-ExtraBold.ttf') format('truetype'),
+        url('fonts/Karla-ExtraBold.svg#Karla-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-ExtraLightItalic.eot');
+    src: url('fonts/Karla-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-ExtraLightItalic.woff2') format('woff2'),
+        url('fonts/Karla-ExtraLightItalic.woff') format('woff'),
+        url('fonts/Karla-ExtraLightItalic.ttf') format('truetype'),
+        url('fonts/Karla-ExtraLightItalic.svg#Karla-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-LightItalic.eot');
+    src: url('fonts/Karla-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-LightItalic.woff2') format('woff2'),
+        url('fonts/Karla-LightItalic.woff') format('woff'),
+        url('fonts/Karla-LightItalic.ttf') format('truetype'),
+        url('fonts/Karla-LightItalic.svg#Karla-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-BoldItalic.eot');
+    src: url('fonts/Karla-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-BoldItalic.woff2') format('woff2'),
+        url('fonts/Karla-BoldItalic.woff') format('woff'),
+        url('fonts/Karla-BoldItalic.ttf') format('truetype'),
+        url('fonts/Karla-BoldItalic.svg#Karla-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Italic.eot');
+    src: url('fonts/Karla-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-Italic.woff2') format('woff2'),
+        url('fonts/Karla-Italic.woff') format('woff'),
+        url('fonts/Karla-Italic.ttf') format('truetype'),
+        url('fonts/Karla-Italic.svg#Karla-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Light.eot');
+    src: url('fonts/Karla-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-Light.woff2') format('woff2'),
+        url('fonts/Karla-Light.woff') format('woff'),
+        url('fonts/Karla-Light.ttf') format('truetype'),
+        url('fonts/Karla-Light.svg#Karla-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-MediumItalic.eot');
+    src: url('fonts/Karla-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-MediumItalic.woff2') format('woff2'),
+        url('fonts/Karla-MediumItalic.woff') format('woff'),
+        url('fonts/Karla-MediumItalic.ttf') format('truetype'),
+        url('fonts/Karla-MediumItalic.svg#Karla-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Medium.eot');
+    src: url('fonts/Karla-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-Medium.woff2') format('woff2'),
+        url('fonts/Karla-Medium.woff') format('woff'),
+        url('fonts/Karla-Medium.ttf') format('truetype'),
+        url('fonts/Karla-Medium.svg#Karla-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Regular.eot');
+    src: url('fonts/Karla-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-Regular.woff2') format('woff2'),
+        url('fonts/Karla-Regular.woff') format('woff'),
+        url('fonts/Karla-Regular.ttf') format('truetype'),
+        url('fonts/Karla-Regular.svg#Karla-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-SemiBoldItalic.eot');
+    src: url('fonts/Karla-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-SemiBoldItalic.woff2') format('woff2'),
+        url('fonts/Karla-SemiBoldItalic.woff') format('woff'),
+        url('fonts/Karla-SemiBoldItalic.ttf') format('truetype'),
+        url('fonts/Karla-SemiBoldItalic.svg#Karla-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-SemiBold.eot');
+    src: url('fonts/Karla-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Karla-SemiBold.woff2') format('woff2'),
+        url('fonts/Karla-SemiBold.woff') format('woff'),
+        url('fonts/Karla-SemiBold.ttf') format('truetype'),
+        url('fonts/Karla-SemiBold.svg#Karla-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/* Common CSS */
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Karla';
+	font-size: 16px;
+	color: #1e1e1e;
+	background-color: #fff;
+	height: 100%;
+}
+body {
+	font-size: 16px;
+	color: #1e1e1e;
+	font-family: 'Karla';
+	min-height: 100%;
+	position: relative;
+	background-color: #fff;
+}
+::-moz-selection {
+    background: #3278C3;
+    color: #fff;
+}
+::selection {
+    background: #3278C3;
+    color: #fff;
+}
+section, .section-cta {
+	position: relative;
+	padding: 90px 0;
+	overflow: hidden;
+	background: #fff;
+}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{
+	display:block;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Karla';
+	color: #1e1e1e;
+	margin: 0;
+}
+h3 {
+	font-size: 20px;
+    font-weight: 600;
+}
+h4 {
+	font-size: 18px;
+    font-weight: 600;
+}
+p {
+    font-size: 1.1em;
+    margin-bottom: 0;
+    color: #1e1e1e;
+}
+a {
+	position: relative;
+	color: #434343;
+}
+a:hover {
+    text-decoration: none;
+    color: #32c0c3;
+    outline: none;
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+figure {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+figure img, a {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+ul li {
+	margin: 0;
+	padding: 0;
+}
+.default-btn {
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1em;
+    position: relative;
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    padding: 16px 50px;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #32c0c3;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+	/* min-width: 230px; */
+    text-align: center;
+    letter-spacing: 1px;
+}
+:focus, :active, button:focus {
+	outline: none;
+}
+.bg-img{
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.white-color {
+	color: #fff;
+}
+.bg-black {
+	background: #38424e;
+}
+.bg-light {
+	background: #f7f9fd;
+}
+.bg-teal {
+	background: #32c0c3;
+}
+.bg-transparent {
+	background: transparent;
+}
+.text-teal {
+	color: #32c0c3;
+}
+.overlay-light {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.font-weight-light {
+	font-weight: 100;
+}
+.font-weight-regular {
+	font-weight: 300;
+}
+.font-weight-medium {
+	font-weight: 500;
+}
+.font-weight-semibold {
+	font-weight: 600;
+}
+.text-underline {
+	text-decoration: underline;
+}
+.text-underline:hover {
+	text-decoration: underline;
+}
+
+/* Common CSS */
+.p-0{padding: 0;}.pl-0 {padding-left: 0px;}.pr-0 {padding-right: 0px;}.pt-0 {padding-top: 0px;}.pb-0 {padding-bottom: 0px;}.p-5{padding: 5px;}.pl-5 {padding-left: 5px;}.pr-5 {padding-right: 5px;}.pt-5 {padding-top: 5px;}.pb-5 {padding-bottom: 5px;}.p-20{padding: 20px;}.pl-20 {padding-left: 20px;}.pr-20 {padding-right: 20px;}.pt-20 {padding-top: 20px;}.pb-20 {padding-bottom: 20px;}.p-30{padding: 30px;}.pl-30 {padding-left: 30px;}.pr-30 {padding-right: 30px;}.pt-30 {	padding-top: 30px;}.pb-30 {padding-bottom: 30px;}.p-40{padding: 40px;}.pl-40 {padding-left: 40px;}.pr-40 {padding-right: 40px;}.pt-40 {padding-top: 40px;}.pb-40 {padding-bottom: 40px;}.p-50{padding: 50px;}.pl-50 {padding-left: 50px;}.pr-50 {padding-right: 50px;}.pt-50 {padding-top: 50px;}.pb-50 {padding-bottom: 50px;}.p-60 {padding: 60px;}.pl-60 {padding-left: 60px;}.pr-60 {padding-right: 60px;}.pt-60 {padding-top: 60px;}.pb-60 {padding-bottom: 60px;}.pl-65 {padding-left: 65px;}.pr-65 {padding-right: 65px;}.pl-80 {padding-left: 80px;}.pr-80 {padding-right: 80px;}.p-100 {padding: 100px;}.pl-100 {padding-left: 100px;}.pr-100 {padding-right: 100px;}.pt-90 {padding-top: 90px;}.pb-90 {padding-bottom: 90px;}.pt-100 {padding-top: 100px;}.pb-100 {padding-bottom: 100px;}.p-120 {padding: 120px;}.pl-120 {padding-left: 120px;}.pr-120 {padding-right: 120px;}.pt-120 {padding-top: 120px;}.pb-120 {padding-bottom: 120px;}
+
+.m-0{margin: 0;}.ml-0 {margin-left: 0px;}.mr-0{margin-right: 0px;}.mt-0 {margin-top: 0px;}.mb-0 {margin-bottom: 0px;}.m-10{margin: 10px;}.ml-10 {margin-left: 10px;}.mr-10{margin-right: 10px;}.mt-10 {margin-top: 10px;}.mt-15 {margin-top: 15px;}.mb-10 {margin-bottom: 10px;}.m-20{margin: 20px;}.ml-20 {margin-left: 20px;}.mr-20{margin-right: 20px;}.mt-20 {margin-top: 20px;}.mb-20 {margin-bottom: 20px;}.m-30{margin: 30px;}.ml-30 {margin-left: 30px;}.mr-30{margin-right: 30px;}.mt-30 {margin-top: 30px;}.mb-30 {margin-bottom: 30px;}.m-40{margin: 40px;}.ml-40 {margin-left: 40px;}.mr-40{margin-right: 40px;}.mt-40 {margin-top: 40px;}.mb-40 {margin-bottom: 40px;}.mb-50 {margin-bottom: 50px;}.m-60{margin: 60px;}.ml-60 {margin-left: 60px;}.mr-60{margin-right: 60px;}.mt-60 {margin-top: 60px;}.mb-60 {margin-bottom: 60px;}.mt-80 {margin-top: 80px;}.ml-80 {margin-left: 80px;} .mt-100 {margin-top: 100px;} .mt-120 {margin-top: 120px;}
+
