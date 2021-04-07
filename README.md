@@ -15,6 +15,7 @@ Frontend:<br>
   3.Tailwind CSS<br>
   4.Animate CSS<br>
   5.Owl Carousel
+  6.Fontawesome Icons
 
 Backend:<br>
   1.Python<br>
